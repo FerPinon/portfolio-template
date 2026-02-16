@@ -611,3 +611,27 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.certificate-item img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.certificate-item img:hover {
+  transform: scale(1.03);
+}
+
+.certificate-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
